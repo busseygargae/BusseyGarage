@@ -1,17 +1,99 @@
 @import "~bulma/sass/utilities/initial-variables"
 
 // Config vars
-// Kaldi logo brand color: #FD461E
-$kaldi-red: #D64000
-$kaldi-red-invert: #fff
+$bussey-orange: #e2761e
+$bussey-orange-invert: #128888
+// $body-color: #162125
+$bussey-blue: #123c48
+$black: #242827
+$body-color: $bussey-orange
+$body-background-color: $bussey-blue
 
-$primary: $kaldi-red
-$primary-invert: $kaldi-red-invert
-$body-color: #333
-$black: #2b2523
+// color resets
+$primary-invert: $bussey-orange-invert
+// $text: $white-ter
+// $text-light: $white-ter
+// $text-strong: $white-ter
+// $text-invert: $white-ter
+$grey: #8c9b9d
+$grey-light: #a9afb7
+$grey-lighter: #dee2e5
+// $grey-dark: darken($grey, 20)
+$orange: #e67e22
+$yellow: #f1b70e
+$green: #2ecc71
+$turquoise: #1abc9c
+$blue: #3498db
+$purple: #8e44ad
+$red: #e74c3c
+$white-ter: #ecf0f1
+$primary: $bussey-orange
+$yellow-invert: #fff
+$subtitle-color: darken($grey, 20)
+$footer-background-color: $white-ter
+$title-color: $primary
+$label-color: lighten($primary, 10)
+$text: $primary
+$text-light: lighten($primary, 10)
+$text-strong: darken($primary, 5)
+$box-color: $text
+$box-background-color: $white-ter
+$box-shadow: none
+$link: $turquoise
+$link-hover: darken($link, 10)
+$link-focus: darken($link, 10)
+$link-active: darken($link, 10)
+$button-color: $primary
+$button-hover-color: darken($primary, 5) // primary-dark
+$button-focus: darken($primary, 5) // primary-dark
+$button-active-color: darken($primary, 5) // primary-dark
+$navbar-height: 4rem
+$navbar-background-color: $primary
+$navbar-item-color: $white-ter
+$navbar-item-hover-color: $link
+$navbar-item-hover-background-color: transparent
+$navbar-item-active-color: $link
+$navbar-dropdown-arrow: #fff
+$navbar-dropdown-background-color: $white-ter
+$navbar-divider-background-color: $grey-lighter
+$navbar-dropdown-border-top: 1px solid $navbar-divider-background-color
+$navbar-dropdown-item-hover-color: $link
+$navbar-dropdown-item-hover-background-color: transparent
+$navbar-dropdown-item-active-background-color: transparent
+$navbar-dropdown-item-active-color: $link
+
+.navbar.navbar
+  background-color: $body-background-color
 
 .navbar .navbar-menu
-  box-shadow:none !important
+  box-shadow: none !important
+
+html
+  scroll-behavior: smooth
+
+.overlay
+  position: absolute
+  left: 0
+  bottom: 0
+  width: 100%
+  z-index: 1
+  color: $bussey-orange
+  font-size: 50px
+  text-align: left
+  line-height: 100px
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3)
+
+.overlay.content
+  margin-left: auto
+  margin-right: auto
+  max-width: 70%
+
+.logo-grid
+  display: grid
+  grid-template-columns: 1fr 1fr
+  gap: 64px
+  justify-items: center
+  margin-top: 96px
 
 .content .taglist
   list-style: none
@@ -28,45 +110,30 @@ $black: #2b2523
     margin-bottom: 1.5rem
     margin-top: 0
 
-// Helper Classes
-.full-width-image-container
+.full-width-image
   width: 100vw
   height: 400px
-  position: relative
-  left: 50%
-  right: 50%
-  margin: 2em -50vw
   background-size: cover
   background-position: bottom
   display: flex
-  justify-content: center
-  align-items: center
-
-.full-width-image
-    width: 100vw
-    height: 400px
-    background-size: cover
-    background-position: bottom
-    display: flex
-    justify-content: center
-    align-items: center
+  align-items: flex-end
 
 .btn
-    display: inline-block
-    padding: 12px 16px 10px
-    font-size: 18px
-    font-size: 1rem
-    line-height: 1.25
-    background-color: #fff
-    border-radius: .25rem
-    text-decoration: none
-    font-weight: 700
-    color: #CC3700
-    text-align: center
-    -webkit-box-shadow: inset 0 0 0 2px #CC3700
-    box-shadow: inset 0 0 0 2px #f40
-    -webkit-transition: all .15s ease
-    transition: all .15s ease
+  display: inline-block
+  padding: 12px 16px 10px
+  font-size: 18px
+  font-size: 1rem
+  line-height: 1.25
+  background-color: #fff
+  border-radius: .25rem
+  text-decoration: none
+  font-weight: 700
+  color: #CC3700
+  text-align: center
+  -webkit-box-shadow: inset 0 0 0 2px #CC3700
+  box-shadow: inset 0 0 0 2px #f40
+  -webkit-transition: all .15s ease
+  transition: all .15s ease
 
 .margin-top-0
   margin-top: 0 !important
@@ -88,11 +155,10 @@ footer.footer
 $menu-item-color: $white-ter
 $menu-item-hover-color: $black !important
 $menu-item-hover-background-color: $black
-$menu-item-active-color: $kaldi-red-invert
-$menu-item-active-background-color:	$kaldi-red-invert
-$menu-list-border-left: 1px solid $kaldi-red-invert
+$menu-item-active-color: $bussey-orange-invert
+$menu-item-active-background-color:	$bussey-orange-invert
+$menu-list-border-left: 1px solid $bussey-orange-invert
 $menu-label-color: $white-ter
-
 
 .menu-label
   font-size: 1em !important
@@ -103,38 +169,41 @@ $menu-label-color: $white-ter
 .social
   padding: 2em
 .social a
-    padding: .5em .5em .3em .5em
-    border-radius: 1em
-    background-color: $white-ter
-    margin: .5em
-    width: 1em
-    height: 1em
-    vertical-align: middle
-    display: inline
+  padding: .5em .5em .3em .5em
+  border-radius: 1em
+  background-color: $white-ter
+  margin: .5em
+  width: 1em
+  height: 1em
+  vertical-align: middle
+  display: inline
+
+section
+  margin-top: 10em
+  margin-left: auto
+  margin-right: auto
+  max-width: 70%
 
 // blog roll
 .blog-list-item.is-featured
-  background-color: #d6400033;
+  background-color: #d6400033
 .blog-list-item header
-  display: flex;
-  margin-bottom: 1em;
+  display: flex
+  margin-bottom: 1em
 .blog-list-item .featured-thumbnail
-  flex-basis: 35%;
-  margin: 0 1.5em 0 0;
-
+  flex-basis: 35%
+  margin: 0 1.5em 0 0
 
 @import "~bulma"
-
 
 // responsiveness
 +tablet-only
   .blog-list-item .featured-thumbnail
-    flex-basis: 50%;
-
+    flex-basis: 50%
 +mobile
   .blog-list-item header
     display: block
   .blog-list-item .featured-thumbnail
-    text-align: center;
-    max-width: 70%;
-    margin: 0 0 1em;
+    text-align: center
+    max-width: 70%
+    margin: 0 0 1em

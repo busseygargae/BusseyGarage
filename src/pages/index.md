@@ -68,4 +68,3 @@ main:
     alt: garegaerha
     image: /img/products-grid1.jpg
 ---
-

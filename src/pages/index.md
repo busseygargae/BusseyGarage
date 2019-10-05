@@ -1,6 +1,6 @@
 ---
 templateKey: index-page
-title: Great coffee with
+title: 'Great coffee with '
 image: /img/home-jumbotron.jpg
 heading: Great coffee with a conscience
 subheading: Support sustainable farming while enjoying a cup
@@ -61,3 +61,4 @@ main:
     alt: garegaerha
     image: /img/products-grid1.jpg
 ---
+

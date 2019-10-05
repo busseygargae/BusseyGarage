@@ -1,5 +1,5 @@
 import React from "react";
-import { navigate } from "gatsby-link";
+import Thanks from "./Thanks";
 
 function encode(data) {
   return Object.keys(data)
@@ -28,11 +28,15 @@ export default class Index extends React.Component {
         ...this.state
       })
     })
-      .then(() => navigate(form.getAttribute("action")))
+      .then(() => this.setState({ submitted: true }))
       .catch(error => alert(error));
   };
 
   render() {
+    if (this.state.submitted) {
+      return <Thanks />;
+    }
+
     return (
       <section className="section">
         <div className="container">

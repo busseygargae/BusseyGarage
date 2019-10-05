@@ -5,13 +5,6 @@ import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import LogoGrid from "../components/LogoGrid";
 import ContactForm from "../components/ContactForm";
-import { relative } from "upath";
-
-// $bussey-orange: #e2761e
-const busseyOrange = "rgb(226, 119, 30)";
-// $bussey-orange-invert: #128888
-// $body-color: #162125
-// $black: #242827
 
 export const IndexPageTemplate = ({
   image,
@@ -20,9 +13,13 @@ export const IndexPageTemplate = ({
   subheading,
   mainpitch,
   description,
-  intro
+  intro,
+  main
 }) => {
   const headerHeight = "400px";
+  if (!image) {
+    image = {};
+  }
   return (
     <div>
       <div
@@ -70,12 +67,14 @@ export const IndexPageTemplate = ({
         <p>{description}</p>
       </section>
 
-      <section>
-        <h3 className="title">Expertise</h3>
-        <p>expert stuff</p>
+      <section id="expert">
+        <h3 className="title">{main.heading}</h3>
+        <p>{main.description}</p>
       </section>
 
-      <LogoGrid gridItems={intro.blurbs} />
+      <div id="certifications">
+        <LogoGrid gridItems={intro.blurbs} />
+      </div>
 
       <ContactForm />
     </div>
@@ -97,8 +96,6 @@ IndexPageTemplate.propTypes = {
 const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
 
-  console.log(frontmatter);
-
   return (
     <Layout>
       <IndexPageTemplate
@@ -109,6 +106,7 @@ const IndexPage = ({ data }) => {
         mainpitch={frontmatter.mainpitch}
         description={frontmatter.description}
         intro={frontmatter.intro}
+        main={frontmatter.main}
       />
     </Layout>
   );
@@ -140,6 +138,10 @@ export const pageQuery = graphql`
         subheading
         mainpitch {
           title
+          description
+        }
+        main {
+          heading
           description
         }
         description

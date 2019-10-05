@@ -6,7 +6,12 @@ const LogoGrid = ({ gridItems }) => (
   <section>
     <div className="logo-grid">
       {gridItems.map(item => (
-        <div key={item.text}>
+        <div
+          key={item.text}
+          style={{
+            width: "240px"
+          }}
+        >
           <PreviewCompatibleImage imageInfo={item} />
         </div>
       ))}

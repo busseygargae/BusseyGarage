@@ -18,9 +18,6 @@ description: >-
   anyone.
 intro:
   blurbs:
-    - image: /img/logo-ase-certified.jpg
-      text: |
-        ASE Certifications
     - image: /img/coffee-gear.png
       text: >
         We offer a small, but carefully curated selection of brewing gear and

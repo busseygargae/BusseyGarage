@@ -1,6 +1,6 @@
 ---
 templateKey: index-page
-title: 'Great coffee with '
+title: Great mechanic work
 image: /img/cuttingmetal.jpg
 heading: Great coffee with a conscience
 subheading: Support sustainable farming while enjoying a cup
@@ -18,7 +18,7 @@ description: >-
   anyone.
 intro:
   blurbs:
-    - image: /img/coffee-gear.png
+    - image: /img/logo-ase-certified.jpg
       text: >
         We offer a small, but carefully curated selection of brewing gear and
         tools for every taste and experience level. No matter if you roast your

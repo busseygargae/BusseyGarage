@@ -1,23 +1,27 @@
 ---
 templateKey: index-page
-title: Great mechanic work
+title: Great Mechanic Work!
 image: /img/logo-white-no-border.png
-heading: Great coffee with a conscience
-subheading: Support sustainable farming while enjoying a cup
+heading: No job too large or small
+subheading: .
 mainpitch:
   title: 'Why Bussey Garage? '
-  description: |+
-
+  description: >
+    If your car needs repair that is stressful enough, you shouldn't have to
+    worry about what quality of parts are being used or if you can trust the
+    diagnosis. All repairs come with a 2 year 24,000 mile warranty!
 description: >-
-  Kaldi is the ultimate spot for coffee lovers who want to learn about their
-  java’s origin and support the farmers that grew it. We take coffee production,
-  roasting and brewing seriously and we’re glad to pass that knowledge to
-  anyone.
+  Just a sample of some of the work being performed at Bussey Garage: in house
+  rebuilds or compoent repair even electrical control modules and turbos!
+  Diagnosis, Diesel, Transmissions, suspention, driveline, engine repair, tires,
+  fluid and filter maitmence, brakes, welding, hybrids, modifications and
+  enchancements.   
 main:
   heading: 'Credentials:'
   description: >-
-    ASE: master, underdercar spelicaist, advanced level specialist, 14 years
-    professional experiance and counting. 
+    ASE: master automobile techniction, underdercar spelicaist, advanced level
+    specialist, mobile air conditioning society, 5 years Mercedes/Chrystler
+    training, 14 years professional experiance and counting. 
 intro:
   blurbs:
     - image: /img/ase-master-mechanic.png

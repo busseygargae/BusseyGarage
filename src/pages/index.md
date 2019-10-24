@@ -5,27 +5,26 @@ image: /img/logo-white-no-border.png
 heading: Great coffee with a conscience
 subheading: Support sustainable farming while enjoying a cup
 mainpitch:
-  title: Why Kaldi
-  description: >
-    Kaldi is the coffee store for everyone who believes that great coffee
-    shouldn't just taste good, it should do good too. We source all of our beans
-    directly from small scale sustainable farmers and make sure part of the
-    profits are reinvested in their communities.
+  title: 'Why Bussey Garage? '
+  description: |+
+
 description: >-
   Kaldi is the ultimate spot for coffee lovers who want to learn about their
   java’s origin and support the farmers that grew it. We take coffee production,
   roasting and brewing seriously and we’re glad to pass that knowledge to
   anyone.
 main:
-  heading: Great coffee with no compromises
-  description: >
-    We hold our coffee to the highest standards from the shrub to the cup.
-    That’s why we’re meticulous and transparent about each step of the coffee’s
-    journey. We personally visit each farm to make sure the conditions are
-    optimal for the plants, farmers and the local environment.
+  heading: 'Credentials:'
+  description: >-
+    ASE: master, underdercar spelicaist, advanced level specialist, 14 years
+    professional experiance and counting. 
 intro:
   blurbs:
     - image: /img/ase-master-mechanic.png
       text: no text
+    - image: /img/macs.png
+      text: 'no'
+    - image: /img/anvanced.jpg
+      text: 'no'
 ---
 

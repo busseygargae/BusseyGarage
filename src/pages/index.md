@@ -1,6 +1,6 @@
 ---
 templateKey: index-page
-title: Great Mechanic Work
+title: 'Import Specialist '
 image: /img/logo-white-no-border.png
 heading: No job too large or small
 subheading: Located near US-42 and Section Line RD in Delaware Ohio

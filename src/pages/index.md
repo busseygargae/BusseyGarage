@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: 'Import Specialist '
-image: /img/logo-white-no-border.png
+image: /img/car-automotive-auto-vehicle-car-engine-engine-3836938.jpg
 heading: No job too large or small
 subheading: Located near US-42 and Section Line RD in Delaware Ohio
 mainpitch:

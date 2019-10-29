@@ -25,10 +25,10 @@ main:
 intro:
   blurbs:
     - image: /img/ase-master-mechanic.png
-      text: Master
+      text: Master Automobile Technician
     - image: /img/macs.png
-      text: MACS
+      text: Mobile Air Conditioning Society
     - image: /img/anvanced.jpg
-      text: advanced
+      text: Certified Advanced Level Specialist
 ---
 
